@@ -31,9 +31,16 @@ class ModuleInstance extends InstanceBase {
 	getConfigFields() {
 		return [
 			{
+				type: 'static-text',
+				id: 'info',
+				width: 12,
+				label: 'Information',
+				value: 'This module is for Epson Pro Projectors.',
+			},
+			{
 				type: 'textinput',
 				id: 'host',
-				label: 'Target IP',
+				label: 'Projector IP',
 				width: 8,
 				regex: Regex.IP,
 			},
